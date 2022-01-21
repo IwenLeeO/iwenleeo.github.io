@@ -28,7 +28,7 @@
 <meta property="og:description" content="1 Github Pages1.1 新建Github的仓库以.github.io结尾eg: 1 仓库名称 iwenlee.github.io     2 勾选 Initialize this repository with a README     3 Create repository  1.2 打开网址：iwenlee.github.io则可以看到ReadMe的内容2 Hexo2.1 安装更新">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-01-21T09:23:54.000Z">
-<meta property="article:modified_time" content="2022-01-21T13:36:19.061Z">
+<meta property="article:modified_time" content="2022-01-21T13:43:02.391Z">
 <meta property="article:author" content="iwen lee">
 <meta name="twitter:card" content="summary">
 
@@ -174,7 +174,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2022-01-21 17:23:54 / Modified: 21:36:19" itemprop="dateCreated datePublished" datetime="2022-01-21T17:23:54+08:00">2022-01-21</time>
+              <time title="Created: 2022-01-21 17:23:54 / Modified: 21:43:02" itemprop="dateCreated datePublished" datetime="2022-01-21T17:23:54+08:00">2022-01-21</time>
             </span>
 
           
@@ -203,7 +203,8 @@
 <h2 id="5-新建Bolg"><a href="#5-新建Bolg" class="headerlink" title="5 新建Bolg"></a>5 新建Bolg</h2><p>1 /blog, 输入 hexo new “My First Post”在\blog\source_posts 路径下，会有一个 My-First-Post.md 的文件。 编辑这个文件，然后保存。<br>2 输入 hexo g 再输入 hexo s前往 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> 查看成果, 按 Ctrl+C 结束</p>
 <h2 id="6-修改博客的配置文件"><a href="#6-修改博客的配置文件" class="headerlink" title="6 修改博客的配置文件"></a>6 修改博客的配置文件</h2><p>1 打开配置文件 /d/blog/_config.yml （使用 bash 里的 vi 或者 notepad++）找到 #Deployment，填入以下内容：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:    </span><br><span class="line">    <span class="built_in">type</span>: git    </span><br><span class="line">    repository: https://github.com/Ryanluoxu/ryanluoxu.github.io.git    </span><br><span class="line">    branch: master</span><br></pre></td></tr></table></figure>
-<p>2 输入 npm install hexo-deployer-git –save 安装 hexo-deployer-git 此步骤只需要做一次。<br>输入 hexo d<br>得到 INFO Deploy done: git 即为部署成功</p>
+<h2 id="7-部署再github上"><a href="#7-部署再github上" class="headerlink" title="7 部署再github上"></a>7 部署再github上</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>输入 hexo -d (deployer)<br>得到 INFO Deploy done: git 即为部署成功</p>
 
     </div>
 
@@ -274,7 +275,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Github-Pages"><span class="nav-number">1.</span> <span class="nav-text">1 Github Pages</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-%E6%96%B0%E5%BB%BAGithub%E7%9A%84%E4%BB%93%E5%BA%93%E4%BB%A5-github-io%E7%BB%93%E5%B0%BE"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 新建Github的仓库以.github.io结尾</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-%E6%89%93%E5%BC%80%E7%BD%91%E5%9D%80%EF%BC%9Aiwenlee-github-io%E5%88%99%E5%8F%AF%E4%BB%A5%E7%9C%8B%E5%88%B0ReadMe%E7%9A%84%E5%86%85%E5%AE%B9"><span class="nav-number">1.2.</span> <span class="nav-text">1.2 打开网址：iwenlee.github.io则可以看到ReadMe的内容</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Hexo"><span class="nav-number">2.</span> <span class="nav-text">2 Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-%E5%AE%89%E8%A3%85%E6%9B%B4%E6%96%B0Nodejs"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 安装更新Nodejs</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-Hexo"><span class="nav-number">3.</span> <span class="nav-text">3 Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-%E5%AE%89%E8%A3%85-Hexo"><span class="nav-number">3.1.</span> <span class="nav-text">3.1 安装 Hexo</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E5%88%9B%E5%BB%BA%E6%9C%AC%E5%9C%B0blog"><span class="nav-number">4.</span> <span class="nav-text">4 创建本地blog</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E6%96%B0%E5%BB%BABolg"><span class="nav-number">5.</span> <span class="nav-text">5 新建Bolg</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-%E4%BF%AE%E6%94%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="nav-number">6.</span> <span class="nav-text">6 修改博客的配置文件</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Github-Pages"><span class="nav-number">1.</span> <span class="nav-text">1 Github Pages</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-%E6%96%B0%E5%BB%BAGithub%E7%9A%84%E4%BB%93%E5%BA%93%E4%BB%A5-github-io%E7%BB%93%E5%B0%BE"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 新建Github的仓库以.github.io结尾</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-%E6%89%93%E5%BC%80%E7%BD%91%E5%9D%80%EF%BC%9Aiwenlee-github-io%E5%88%99%E5%8F%AF%E4%BB%A5%E7%9C%8B%E5%88%B0ReadMe%E7%9A%84%E5%86%85%E5%AE%B9"><span class="nav-number">1.2.</span> <span class="nav-text">1.2 打开网址：iwenlee.github.io则可以看到ReadMe的内容</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Hexo"><span class="nav-number">2.</span> <span class="nav-text">2 Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-%E5%AE%89%E8%A3%85%E6%9B%B4%E6%96%B0Nodejs"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 安装更新Nodejs</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-Hexo"><span class="nav-number">3.</span> <span class="nav-text">3 Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-%E5%AE%89%E8%A3%85-Hexo"><span class="nav-number">3.1.</span> <span class="nav-text">3.1 安装 Hexo</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E5%88%9B%E5%BB%BA%E6%9C%AC%E5%9C%B0blog"><span class="nav-number">4.</span> <span class="nav-text">4 创建本地blog</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E6%96%B0%E5%BB%BABolg"><span class="nav-number">5.</span> <span class="nav-text">5 新建Bolg</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-%E4%BF%AE%E6%94%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="nav-number">6.</span> <span class="nav-text">6 修改博客的配置文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-%E9%83%A8%E7%BD%B2%E5%86%8Dgithub%E4%B8%8A"><span class="nav-number">7.</span> <span class="nav-text">7 部署再github上</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
