@@ -28,7 +28,7 @@
 <meta property="og:description" content="1 Github Pages1.1 新建Github的仓库以.github.io结尾eg: 1 仓库名称 iwenlee.github.io     2 勾选 Initialize this repository with a README     3 Create repository  1.2 打开网址：iwenlee.github.io则可以看到ReadMe的内容2 Hexo2.1 安装更新">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-01-21T09:23:54.000Z">
-<meta property="article:modified_time" content="2022-01-21T13:22:21.342Z">
+<meta property="article:modified_time" content="2022-01-21T13:36:19.061Z">
 <meta property="article:author" content="iwen lee">
 <meta name="twitter:card" content="summary">
 
@@ -174,7 +174,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2022-01-21 17:23:54 / Modified: 21:22:21" itemprop="dateCreated datePublished" datetime="2022-01-21T17:23:54+08:00">2022-01-21</time>
+              <time title="Created: 2022-01-21 17:23:54 / Modified: 21:36:19" itemprop="dateCreated datePublished" datetime="2022-01-21T17:23:54+08:00">2022-01-21</time>
             </span>
 
           
@@ -200,7 +200,7 @@
 <h2 id="3-Hexo"><a href="#3-Hexo" class="headerlink" title="3 Hexo"></a>3 Hexo</h2><h3 id="3-1-安装-Hexo"><a href="#3-1-安装-Hexo" class="headerlink" title="3.1 安装 Hexo"></a>3.1 安装 Hexo</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 <p>hexo -v 检查是否安装成功</p>
 <h2 id="4-创建本地blog"><a href="#4-创建本地blog" class="headerlink" title="4 创建本地blog"></a>4 创建本地blog</h2><p>1 在 ubuntu 上新建文件夹 blog<br>2 输入 hexo init 将 blog 文件夹初始化成一个博客文件夹<br>3 输入 npm install 安装依赖包。<br>4 输入 hexo g 生成（generate）网页。<br>5 由于我们还没创建任何博客，生成的网页会展示 Hexo 里面自带了一个 Hello World 的博客。<br>6 输入 hexo s 将生成的网页放在了本地服务器（server),浏览器里输入 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a>, 就可以看到刚才的成果了。<br>7 回到 Git Bash，按 Ctrl+C 结束, 此时再看 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> 就是无法访问了</p>
-<h2 id="5-新建Bolg"><a href="#5-新建Bolg" class="headerlink" title="5 新建Bolg"></a>5 新建Bolg</h2><p>1 /blog, 输入 hexo new “My First Post”在\blog\source_posts 路径下，会有一个 My-First-Post.md 的文件。 编辑这个文件，然后保存。<br>2 回到 Git Bash，输入 hexo g 输入 hexo s前往 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> 查看成果, 按 Ctrl+C 结束</p>
+<h2 id="5-新建Bolg"><a href="#5-新建Bolg" class="headerlink" title="5 新建Bolg"></a>5 新建Bolg</h2><p>1 /blog, 输入 hexo new “My First Post”在\blog\source_posts 路径下，会有一个 My-First-Post.md 的文件。 编辑这个文件，然后保存。<br>2 输入 hexo g 再输入 hexo s前往 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> 查看成果, 按 Ctrl+C 结束</p>
 <h2 id="6-修改博客的配置文件"><a href="#6-修改博客的配置文件" class="headerlink" title="6 修改博客的配置文件"></a>6 修改博客的配置文件</h2><p>1 打开配置文件 /d/blog/_config.yml （使用 bash 里的 vi 或者 notepad++）找到 #Deployment，填入以下内容：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:    </span><br><span class="line">    <span class="built_in">type</span>: git    </span><br><span class="line">    repository: https://github.com/Ryanluoxu/ryanluoxu.github.io.git    </span><br><span class="line">    branch: master</span><br></pre></td></tr></table></figure>
 <p>2 输入 npm install hexo-deployer-git –save 安装 hexo-deployer-git 此步骤只需要做一次。<br>输入 hexo d<br>得到 INFO Deploy done: git 即为部署成功</p>
